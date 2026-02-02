@@ -31,5 +31,14 @@
     "lint-staged": "^15.1.0",
     "prettier": "^3.1.0",
     "vite": "^7.2.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,scss,md}": [
+      "prettier --write"
+    ]
   }
 }
